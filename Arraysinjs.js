@@ -83,6 +83,8 @@ function compare(a,b)
 	return a-b
 
 }
+// Sorting and string concatenation
+
 
 var n=[]
 n.push(1,7,4,3,5,6)
@@ -90,3 +92,25 @@ n.sort(compare)
 n=n.reverse()
 console.log(n)
 console.log(n.join(''))
+
+//map 
+
+var n=[1,2,3,4,5,6,7,8,9]
+console.log(n)
+function square(n)
+{
+	return n*n
+}
+ 
+n=n.map(square)
+console.log(n)
+
+//filter
+
+function iseven(n)
+{
+	return n%2==0
+}
+
+n=n.filter(iseven)
+console.log(n)
